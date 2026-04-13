@@ -1,0 +1,14 @@
+import tkinter as tk
+
+root = tk.Tk()
+
+#a nested loop
+for row_index in range(3):
+    for col_index in range(3):
+
+        #create a button at each intersection
+        btn = tk.Button(root, text = f"R{row_index} C{col_index}")
+
+        #.grid() is like a spreadsheet layout
+        btn.grid(row=row_index, column=col_index, padx=5, pady=5)
+root.mainloop()
