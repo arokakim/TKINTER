@@ -1,14 +1,9 @@
 import tkinter as tk
 
+#create the main window
 root = tk.Tk()
+root.title("Iteration 1: The shell")
+root.geometry("500x700")
 
-#a nested loop
-for row_index in range(3):
-    for col_index in range(3):
-
-        #create a button at each intersection
-        btn = tk.Button(root, text = f"R{row_index} C{col_index}")
-
-        #.grid() is like a spreadsheet layout
-        btn.grid(row=row_index, column=col_index, padx=5, pady=5)
+#keep the main window open
 root.mainloop()
