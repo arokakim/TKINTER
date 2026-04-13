@@ -1,9 +1,14 @@
 import tkinter as tk
 
-#create the main window
 root = tk.Tk()
-root.title("Iteration 1: The shell")
-root.geometry("500x700")
+root.title("Iteration 2: The Button Grid")
+root.geometry("400x400")
 
-#keep the main window open
+#the logic for the button grid
+def change_color():
+    root.configure(bg = "lightblue")
+
+btn = tk.Button(root, text="Turn Blue", command=change_color)
+btn.pack(pady=20) # adds some space around the button
+
 root.mainloop()
